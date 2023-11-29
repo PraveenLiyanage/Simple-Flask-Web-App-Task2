@@ -5,18 +5,19 @@
 
 <form method="post">
     <div class="form-group">
-        <label for="title">Title</label>
+        <label for="title">Title</label><br>
         <input type="text" name="title" placeholder="Post title"
                class="form-control"
                value="{{ request.form['title'] or post['title'] }}">
         </input>
     </div>
-
+    <br>
     <div class="form-group">
-        <label for="content">Content</label>
+        <label for="content">Content</label><br>
         <textarea name="content" placeholder="Post content"
                   class="form-control">{{ request.form['content'] or post['content'] }}</textarea>
     </div>
+    <br>
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
