@@ -16,5 +16,13 @@ cur.execute("INSERT INTO posts (title, content) VALUES (?, ?)",
             ('Second Post', 'Content for the second post')
             )
 
+cur.execute("INSERT INTO users (username, email, password) VALUES (?, ?, ?)",
+            ('Amal', 'amal@gmail.com', 'password123')
+            )
+
+cur.execute("INSERT INTO users (username, email, password) VALUES (?, ?, ?)",
+            ('Kamal', 'kamal@gmail.com', 'password456')
+            )
+
 connection.commit()
 connection.close()
